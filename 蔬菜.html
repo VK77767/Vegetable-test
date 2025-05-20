@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>蔬菜商品介紹</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Noto Sans TC', sans-serif;
+      background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #2e7d32;
+      margin: 20px;
+      text-shadow: 1px 1px 2px #c8e6c9;
+    }
+
+    .layout {
+      display: flex;
+      padding: 0 20px 40px;
+      gap: 30px;
+    }
+
+    .sidebar {
+      width: 200px;
+      min-width: 160px;
+      background-color: #ffffffc2;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2em;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #388e3c;
+      font-weight: 500;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #c8e6c9;
+    }
+
+    .product-area {
+      flex: 1;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background-color: #ddd;
+    }
+
+    .card h3 {
+      margin: 16px 0 8px;
+      color: #388e3c;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      padding: 0 10px 16px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* 回主頁按鈕樣式 */
+    .back-button {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .back-button a {
+      display: inline-block;
+      background: linear-gradient(to right, #a5d6a7, #81c784);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 24px;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background: linear-gradient(to right, #81c784, #66bb6a);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>新鮮蔬菜商品介紹</h1>
+
+  <!-- 回主頁按鈕 -->
+  <div class="back-button">
+    <a href="main蔬菜.html">
+      <span>← 回主頁</span>
+    </a>
+  </div>
+
+  <div class="layout">
+    <!-- 左側分類選單 -->
+    <div class="sidebar">
+      <h2>商品分類</h2>
+      <ul>
+        <li><a href="蔬菜.html">葉菜類</a></li>
+        <li><a href="#">根莖類</a></li>
+        <li><a href="#">瓜果類</a></li>
+        <li><a href="#">有機蔬菜</a></li>
+        <li><a href="#">生活用品</a></li>
+        <li><a href="#">其他</a></li>
+      </ul>
+    </div>
+
+    <!-- 商品區 -->
+    <div class="product-area">
+      <div class="container">
+        <div class="card"><img src="蔬菜/1.jpg" alt="青江菜"><h3>青江菜</h3><p>口感清脆、富含維生素A與纖維。</p></div>
+        <div class="card"><img src="蔬菜/2.jpg" alt="小黃瓜"><h3>小黃瓜</h3><p>清爽解熱，可生食或入菜。</p></div>
+        <div class="card"><img src="蔬菜/3.jpg" alt="番茄"><h3>番茄</h3><p>含有豐富茄紅素，有助抗氧化。</p></div>
+        <div class="card"><img src="蔬菜/4.jpg" alt="紅蘿蔔"><h3>紅蘿蔔</h3><p>營養豐富，有助眼睛健康。</p></div>
+        <div class="card"><img src="蔬菜/5.jpg" alt="菠菜"><h3>菠菜</h3><p>鐵質豐富，適合補血養身。</p></div>
+        <div class="card"><img src="蔬菜/6.jpg" alt="高麗菜"><h3>高麗菜</h3><p>口感甘甜，是常見的家常蔬菜。</p></div>
+        <div class="card"><img src="蔬菜/7.jpg" alt="地瓜葉"><h3>地瓜葉</h3><p>纖維高，幫助腸胃蠕動。</p></div>
+        <div class="card"><img src="蔬菜/8.jpg" alt="空心菜"><h3>空心菜</h3><p>適合熱炒，風味濃郁。</p></div>
+        <div class="card"><img src="蔬菜/9.jpg" alt="甜椒"><h3>甜椒</h3><p>色彩鮮豔，含豐富維生素C。</p></div>
+        <div class="card"><img src="蔬菜/10.jpg" alt="玉米筍"><h3>玉米筍</h3><p>脆甜可口，適合涼拌或熱炒。</p></div>
+        <div class="card"><img src="蔬菜/11.jpg" alt="南瓜"><h3>南瓜</h3><p>口感綿密，適合煮湯或燉煮。</p></div>
+        <div class="card"><img src="蔬菜/12.jpg" alt="茄子"><h3>茄子</h3><p>紫色蔬菜，富含花青素。</p></div>
+        <div class="card"><img src="蔬菜/13.jpg" alt="芥藍"><h3>芥藍</h3><p>味道微苦，口感紮實有嚼勁。</p></div>
+        <div class="card"><img src="蔬菜/14.jpg" alt="花椰菜"><h3>花椰菜</h3><p>營養全面，是優質綠色蔬菜。</p></div>
+        <div class="card"><img src="蔬菜/15.jpg" alt="洋蔥"><h3>洋蔥</h3><p>味道濃郁，可提味抗菌。</p></div>
+        <div class="card"><img src="蔬菜/16.jpg" alt="萵苣"><h3>萵苣</h3><p>生菜沙拉常見的爽脆蔬菜。</p></div>
+        <div class="card"><img src="蔬菜/17.jpg" alt="香菇"><h3>香菇</h3><p>提升鮮味，有益免疫力。</p></div>
+        <div class="card"><img src="蔬菜/18.jpg" alt="芋頭"><h3>芋頭</h3><p>富含澱粉，口感細緻。</p></div>
+        <div class="card"><img src="蔬菜/19.jpg" alt="竹筍"><h3>竹筍</h3><p>爽脆清甜，是春夏時令菜。</p></div>
+        <div class="card"><img src="蔬菜/20.jpg" alt="豆芽菜"><h3>豆芽菜</h3><p>經濟實惠，富含維生素B。</p></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
