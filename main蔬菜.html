@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>志光街菜攤</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="0.jpg" rel="stylesheet">
   <style>
     :root {
       --main-green: #2E7D32;
@@ -153,15 +153,84 @@
       margin: 0;
     }
 
-    @media (max-width: 600px) {
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
       .banner {
-        font-size: 1.6em;
-        height: 220px;
+        font-size: 1.8em;
+        height: 250px;
         text-align: center;
       }
 
       header h1 {
         font-size: 2em;
+      }
+
+      nav {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+
+      nav a {
+        margin: 8px 0;
+        font-size: 1em;
+        padding: 6px 12px;
+      }
+
+      .content {
+        padding: 40px 15px 30px;
+      }
+
+      .category-title {
+        font-size: 1.7em;
+      }
+
+      .category-description {
+        font-size: 1em;
+        margin-bottom: 30px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .card img {
+        height: 150px;
+      }
+
+      .card h3 {
+        font-size: 1.1em;
+      }
+
+      .card p {
+        font-size: 0.9em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner {
+        font-size: 1.4em;
+        height: 200px;
+      }
+
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card img {
+        height: 120px;
+      }
+
+      .card h3 {
+        font-size: 1em;
+      }
+
+      .card p {
+        font-size: 0.85em;
       }
     }
   </style>
@@ -173,12 +242,12 @@
   </header>
 
   <nav>
-    <a href="蔬菜.html">葉菜類</a>
-    <a href="#root">根莖類</a>
-    <a href="#fruit">瓜果類</a>
-    <a href="#organic">有機蔬菜</a>
-    <a href="#daily">生活用品</a>
-    <a href="#others">其他分類</a>
+    <a href="蔬菜.html">蔬菜類</a>
+    <a href="水果.html">水果類</a>
+    <a href="冷藏食品.html">冷藏食品</a>
+    <a href="常溫食品.html">常溫食品</a>
+    <a href="醬料、調味料.html">醬料、調味料</a>
+    <a href="泡麵與其他麵類.html">泡麵與其他麵類</a>
   </nav>
 
   <div class="banner">
@@ -192,13 +261,14 @@
     </div>
 
     <div class="product-grid">
-      <div class="card"><img src="1.jpg" alt="青江菜"><h3>青江菜</h3><p>口感清脆、富含維生素A與纖維。</p></div>
-      <div class="card"><img src="2.jpg" alt="小黃瓜"><h3>小黃瓜</h3><p>清爽解熱，可生食或入菜。</p></div>
-      <div class="card"><img src="3.jpg" alt="番茄"><h3>番茄</h3><p>含有豐富茄紅素，有助抗氧化。</p></div>
-      <div class="card"><img src="4.jpg" alt="紅蘿蔔"><h3>紅蘿蔔</h3><p>營養豐富，有助眼睛健康。</p></div>
-	  <div class="card"><img src="5.jpg" alt="高麗菜"><h3>紅蘿蔔</h3><p>營養豐富，有助眼睛健康。</p></div>
-	  <div class="card"><img src="6.jpg" alt="玉米"><h3>紅蘿蔔</h3><p>營養豐富，有助眼睛健康。</p></div>
+      <div class="card"><img src="1-1.jpg" alt="蔬菜"><h3>蔬菜</h3><p>蔬菜富含各種營養素，口感清脆，對人體健康有很好的幫助，尤其富含維生素A與膳食纖維，對眼睛健康和消化系統有益。</p></div>
+      <div class="card"><img src="2-1.jpg" alt="水果"><h3>水果</h3><p>水果提供豐富的維生素C和水分，有助於保持身體水分平衡並清爽解熱。適合生食，並能增強免疫力。</p></div>
+      <div class="card"><img src="3-1.jpg" alt="冷藏食品"><h3>冷藏食品</h3><p>冷藏食品通常富含抗氧化成分，如茄紅素等，有助於減緩老化，維持皮膚健康。常見的冷藏食品包括各類蔬果和肉類。</p></div>
+      <div class="card"><img src="4-1.jpg" alt="常溫食品"><h3>常溫食品</h3><p>常溫食品不需冷藏即可保存，如乾貨、罐頭和各種乾燥食品。它們提供豐富的營養並能長期儲存，是家庭必備的食品選擇。</p></div>
+      <div class="card"><img src="5-1.jpg" alt="醬料、調味料"><h3>醬料、調味料</h3><p>醬料和調味料能增添食物的風味，並提供多種營養成分，如維生素、礦物質等。適合用於各類菜餚中，提升口感與營養價值。</p></div>
+      <div class="card"><img src="6-1.jpg" alt="泡麵與其他麵類"><h3>泡麵與其他麵類</h3><p>泡麵與麵類食品為現代快速便捷的選擇，富含碳水化合物與必需的營養成分，能夠快速補充能量，並且美味可口。</p></div>
     </div>
+
   </div>
 
   <footer>
